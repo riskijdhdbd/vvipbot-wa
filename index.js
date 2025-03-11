@@ -15,14 +15,14 @@ const menu = require("./lib/menu.js")
 
 const apivhtear = 'Apikey vhtear';
 const apibarbar = 'Apikey mhankbarbar';
-const BotName = 'VVIPINDO BOT'; 
-const instagram = 'agus_alnsyh71- kaelMk_'; 
-const aktif = 'Kapan bot aktif';
+const BotName = 'BOT RISKI'; 
+const instagram = 'riski2110'; 
+const aktif = 'kapan saja';
 const vcard = 'BEGIN:VCARD\n' // metadata of the contact card
             + 'VERSION:3.0\n' 
-            + 'FN:Agus\n' // Nama kamu
-            + 'ORG:VVIPINDO;\n' // Nama bot
-            + 'TEL;type=CELL;type=VOICE;waid=6289613469459:+62 896-1346-9459\n' //Nomor whatsapp kamu
+            + 'FN:Agus\n' // BANG RIZZ
+            + 'ORG:VVIPINDO;\n' // BOT RISKI
+            + 'TEL;type=CELL;type=VOICE;waid=6289613469459:+62 896-1346-9459\n' //628089508322957
             + 'END:VCARD'
 const
 {
@@ -91,27 +91,27 @@ conn.on('message-new', async(m) =>
    console.log(`[ ${moment().format("HH:mm:ss")} ] => Nomor: [ ${id.split("@s.whatsapp.net")[0]} ] => ${text}`);
 
 //fitur
-if (text.includes('.Seberapabucin')){
+if (text.includes('.bot')){
 conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
 }
-if (text.includes(".seberapabucin")){
-const teks = text.replace(/.seberapabucin /, "")
+if (text.includes(".bot")){
+const teks = text.replace(/.bot /, "")
 axios.get(`https://arugaz.herokuapp.com/api/howbucins`).then((res) => {
     let hasil = `*Bucin Detected*\n*Persentase* : ${res.data.persen}% \n_${res.data.desc}_ `;
     conn.sendMessage(id, hasil ,MessageType.text, { quoted: m } );
 })
 }
 //kerang ajaib
-if (text.includes('.Apakah')){
+if (text.includes('.bot')){
 conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil\n_contoh : .apakah aku cantik_',MessageType.text, {quoted: m});
 }
-if (text.includes('.Bolehkah')){
+if (text.includes('.allmenu')){
 conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil\n_contoh : .bolehkah aku mencintai dia_',MessageType.text, {quoted: m});
 }
-if (text.includes('.Kapan')){
+if (text.includes('.bot')){
 conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil\n_contoh : .kapan aku kaya_',MessageType.text, {quoted: m});
 }
-if (text.includes('.apakah')){
+if (text.includes('.allmenu')){
 const teks = text.replace(/./, '')
 const truth =[
 'Iya',
